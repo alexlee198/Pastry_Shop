@@ -1,0 +1,35 @@
+<div class="background-img">
+  <div class="search-container">
+    <input matInput type="text" [(ngModel)]="cakeSearch" placeholder="" />
+    <!-- <mat-form-field class="search-input">
+      <mat-label>Pastry Search</mat-label>
+      <mat-select >
+        <mat-option [value]="" >
+          {{pastry.catergory}}
+        </mat-option>
+      </mat-select>
+      </mat-form-field> -->
+    <div class="center-button">
+      <button mat-raised-button class="search-button" type="button" (click)="searchPastry()">Search</button>
+    </div>
+  </div>
+
+  <div class="contain">
+    <mat-card *ngFor="let pastry of cakes" class="card">
+      <mat-card-content style="padding: 5px;" class="card-container">
+        <div class="img-box">
+          <img style="border-radius: 200px;" mat-card-sm-image [src]="pastry.img" alt="" />
+        </div>
+        <div class="pastry-container">
+          <h2>{{ pastry.name }}</h2>
+          <p>{{ pastry.catergory }}</p>
+          <p>{{ pastry.price }}</p>
+
+          <a routerLink="/buy-cake/{{ pastry.id }}" routerLinkActive="activebutton">
+            <button style="background-color: hotpink; color: aqua;" mat-raised-button type="button">Buy</button>
+          </a>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

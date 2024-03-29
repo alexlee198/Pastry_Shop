@@ -1,0 +1,96 @@
+.background-img{
+    background: url(/assets/Images/PastryBackground.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+}
+
+.search-container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 5px;
+    gap: 10px
+}
+
+.search-input{
+    border: none;
+    width: 200px;
+    height: 80px;
+    opacity: 0.5;
+}
+
+.center-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-button{
+    background-color: hotpink;
+    color: aqua;
+    width: 80px;
+    height: 25px;
+}
+
+.contain{
+
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+}
+
+.card{
+    background-color: white;
+}
+
+.card-container{
+    width: 175px;
+    height: 260px;
+    box-shadow: 10px 5px 5px rgba(0, 255, 255, 0.941);
+    border-radius: 5px;
+
+
+}
+
+.img-box{ 
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    margin: 0px;
+    overflow: hidden;
+    width: 175px;
+    height: 100px;
+}
+
+img{
+    width: 100px;
+    border-radius: 150px;
+    object-fit: fill;
+}
+
+
+.pastry-container{
+    color: hotpink;
+    padding-top: 10px;
+    font-size: 18px;
+    font-family: "Roboto Serif", serif;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 0px;
+}
+
+button{
+    width: 75px;
+     height:25px; 
+     cursor: pointer; 
+     background-color: hotpink; 
+     color:aqua;
+     font-size: 15px;
+     font-weight: bold;
+     border: none;
+
+}

@@ -1,0 +1,63 @@
+<div class="background-img">
+    <div class="buy-box">
+        <mat-card class="buy-card">
+            <mat-card-content class="card">
+                <div class="img-box">
+                    <img style="border-radius: 100px; ;" mat-card-sm-image [src]="pastry.img" alt="">
+                </div>
+                    <h2>{{ pastry.name }}</h2>
+                    <p>{{ pastry.catergory }}</p>
+                    <p>{{ pastry.price }}</p>
+            </mat-card-content>
+        </mat-card>
+    </div>
+
+    <div class="center-submit" *ngIf="submitted; else elseBlock">
+        <mat-card class="submit-card">
+            <mat-card-title style= "text-align:center; color:green">Order Completed<mat-icon style="padding-left: 5px" fontIcon="check"></mat-icon></mat-card-title>
+            <mat-card-content  class="submit-container" style="display:inline-block"> 
+
+                <p>{{orderSubmitted.name}}</p>
+                <p>{{orderSubmitted.email}}</p>
+                <p>{{orderSubmitted.phoneNumber}}</p>
+                <p>{{orderSubmitted.address}}</p>
+                <p>{{orderSubmitted.quantity}}</p>
+
+            </mat-card-content>
+        </mat-card>
+    </div>
+ 
+    <ng-template #elseBlock>
+        <div class="contain">
+        <form class="form-container" (ngSubmit)="saveOrder(form)" ngForm #form="ngForm">
+            <h2 style=" color: hotpink;">Pastry Checkout</h2>
+            <div>
+                <input #name="ngModel" type="text" class="form-control" placeholder="Name" ngModel name="name" required />
+            </div>
+            <div [hidden]=" name.valid || form.pristine" style="color: red;">
+                Title is required
+            </div>
+            <div>
+                <input #address="ngModel" type="text" class="form-control" placeholder="Address" ngModel name="address" required />
+            </div>
+            <div [hidden]=" address.valid || form.pristine" style="color: red;">
+                Title is required
+            </div>
+
+            <div>
+                <input #email = "ngModel" type="text" class="form-control" placeholder="Email" ngModel name="email" required />
+            </div>
+
+            <div>
+                <input #phoneNumber = "ngModel" type="text" class="form-control" placeholder="(XXX)-XXX-XXXX" ngModel name="phoneNumber" required />
+            </div>
+
+            <div>
+                <input type="text" class="form-control" placeholder="Quantity" ngModel name="quantity" required />
+            </div>
+
+            <button mat-raised-button type="submit" color="primary">Checkout</button>
+        </form>
+        </div>  
+    </ng-template>
+</div>
