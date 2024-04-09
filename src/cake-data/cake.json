@@ -1,0 +1,581 @@
+{
+  "pastries": [
+    {
+      "id": "1",
+      "img": "/assets/Images/oatmeal cookies.jpg",
+      "name": "Oatmeal Cookie",
+      "catergory": "Cookies",
+      "price": 2
+    },
+    {
+      "id": "2",
+      "img": "assets/Images/Carrot.jpg",
+      "name": "Carrot Cake",
+      "catergory": "Cake",
+      "price": 5
+    },
+    {
+      "id": "3",
+      "img": "/assets/Images/Red Velvet.jpg",
+      "name": "Red Velvet",
+      "catergory": "Cake",
+      "price": 6
+    },
+    {
+      "id": "4",
+      "img": "/assets/Images/Sugar Cookie.jpg",
+      "name": "Sugar Cookie",
+      "catergory": "Cookies",
+      "price": 2
+    },
+    {
+      "id": "5",
+      "img": "assets/Images/donut.jpg",
+      "name": "Donut",
+      "catergory": "Pastry",
+      "price": 1
+    },
+    {
+      "id": "6",
+      "img": "assets/Images/Tiramisu.jpg",
+      "name": "Tiramisu",
+      "catergory": "Cake",
+      "price": 5
+    },
+    {
+      "id": "7",
+      "img": "assets/Images/Flan.jpg",
+      "name": "Flan",
+      "catergory": "Cake",
+      "price": 6
+    },
+    {
+      "id": "8",
+      "img": "assets/Images/IceCreamCake.jpg",
+      "name": "Ice Cream Cake",
+      "catergory": "Cake",
+      "price": 5
+    },
+    {
+      "id": "9",
+      "img": "assets/Images/Macadamia.jpg",
+      "name": "Macadamia",
+      "catergory": "Cookies",
+      "price": 2
+    },
+    {
+      "id": "10",
+      "img": "assets/Images/Brownie.jpg",
+      "name": "Brownie",
+      "catergory": "Brownie",
+      "price": 4
+    },
+    {
+      "id": "11",
+      "img": "assets/Images/CookieBrownie.jpg",
+      "name": "Cookie Brownie",
+      "catergory": "Brownie",
+      "price": 4
+    },
+    {
+      "id": "12",
+      "img": "assets/Images/Blondie.jpg",
+      "name": "Blondie",
+      "catergory": "Brownie",
+      "price": 4
+    },
+    {
+      "id": "14",
+      "img": "assets/Images/ChocolateCake.jpg",
+      "name": "Chocolate Cake",
+      "catergory": "Cake",
+      "price": 5
+    },
+    {
+      "id": "15",
+      "img": "assets/Images/StrawberryCake.jpg",
+      "name": "Strawberry Cake",
+      "catergory": "Cake",
+      "price": 5
+    },
+    {
+      "id": "16",
+      "img": "assets/Images/CheeseCake.jpg",
+      "name": "Cheese Cake",
+      "catergory": "Cake",
+      "price": 5
+    },
+    {
+      "id": "17",
+      "img": "assets/Images/CoffeeCake.jpg ",
+      "name": "Coffee Cake",
+      "catergory": "Cake",
+      "price": 4
+    },
+    {
+      "id": "18",
+      "img": "assets/Images/Berry Danish.jpg",
+      "name": "Berry Danish",
+      "catergory": "Pastry",
+      "price": 3
+    },
+    {
+      "id": "19",
+      "img": "assets/Images/Blueberry Muffin.jpg",
+      "name": "Blueberry Muffin",
+      "catergory": "Pastry",
+      "price": 3
+    },
+    {
+      "id": "20",
+      "img": "assets/Images/Chip Muffin.jpg",
+      "name": "Chip Muffin",
+      "catergory": "Pastry",
+      "price": 3
+    },
+    {
+      "id": "21",
+      "img": "assets/Images/Cannoli.jpg",
+      "name": "Cannoli",
+      "catergory": "Pastry",
+      "price": 3
+    },
+    {
+      "id": "22",
+      "img": "assets/Images/Cinnamon Rolls.jpg",
+      "name": "Cinnamon Rolls",
+      "catergory": "Pastry",
+      "price": 3
+    },
+    {
+      "id": "23",
+      "img": "assets/Images/Chocolate Cross.jpg",
+      "name": "Chocolate Croissant",
+      "catergory": "Pastry",
+      "price": 3
+    },
+    {
+      "id": "24",
+      "img": "assets/Images/Danish.jpg",
+      "name": "Danish",
+      "catergory": "Pastry",
+      "price": 3
+    },
+    {
+      "id": "25",
+      "img": "assets/Images/Pound Cake.jpg",
+      "name": "Pound Cake",
+      "catergory": "Cake",
+      "price": 4
+    },
+    {
+      "id": "26",
+      "img": "assets/Images/Rainbow Cookie.jpg",
+      "name": "Rainbow Cookies",
+      "catergory": "Cookies",
+      "price": 2
+    },
+    {
+      "id": "27",
+      "img": "assets/Images/Tassies.jpg",
+      "name": "Tassies",
+      "catergory": "Cookies",
+      "price": 2
+    },
+    {
+      "id": "28",
+      "img": "assets/Images/Snickerdoodle.jpg",
+      "name": "Snickerdoodle",
+      "catergory": "Cookies",
+      "price": 2
+    },
+    {
+      "id": "29",
+      "img": "assets/Images/Macarons.jpg",
+      "name": "Macarons",
+      "catergory": "Cookies",
+      "price": 2
+    },
+    {
+      "id": "30",
+      "img": "assets/Images/Ginger.jpg",
+      "name": "Gingersnaps",
+      "catergory": "Cookeis",
+      "price": 2
+    },
+    {
+      "id": "31",
+      "img": "assets/Images/Chocolate Chip.jpg ",
+      "name": "Chocolate Chip",
+      "catergory": "Cookies",
+      "price": 2
+    },
+    {
+      "id": "32",
+      "img": "assets/Images/BlackCookie.jpg",
+      "name": "Black & White Cookie",
+      "catergory": "Cookies",
+      "price": 2
+    },
+    {
+      "id": "33",
+      "img": "assets/Images/oreo.jpg ",
+      "name": "Oreo Brownie",
+      "catergory": "Brownie",
+      "price": 4
+    },
+    {
+      "id": "2",
+      "img": "assets/Images/Turtle.jpg",
+      "name": "Turtle Brownie",
+      "catergory": "Brownie",
+      "price": 4
+    }
+  ],
+  "orders": [
+    {
+      "id": "3",
+      "productName": "Red Velvet",
+      "date": "Thu Mar 21 2024"
+    },
+    {
+      "id": "3",
+      "productName": "Red Velvet",
+      "name": "Lee Floyd McLeod",
+      "address": "6 Mcfadden Circle",
+      "quantity": "2",
+      "date": "Thu Mar 21 2024"
+    },
+    {
+      "id": "1",
+      "productName": "Oatmeal Cookie",
+      "name": "Lee Floyd McLeod",
+      "address": "6 Mcfadden Circle",
+      "quantity": "2",
+      "date": "Sat Mar 23 2024"
+    },
+    {
+      "id": "10",
+      "productName": "Brownie",
+      "name": "Lee Floyd McLeod",
+      "address": "6 Mcfadden Circle",
+      "quantity": "2",
+      "date": "Sun Mar 24 2024"
+    },
+    {
+      "id": "5",
+      "productName": "Donut",
+      "name": "Lee Floyd McLeod",
+      "address": "6 Mcfadden Circle",
+      "quantity": "5",
+      "date": "Sun Mar 24 2024"
+    },
+    {
+      "id": "6",
+      "productName": "Tiramisu",
+      "name": "",
+      "address": "",
+      "quantity": "",
+      "date": "Sun Mar 24 2024"
+    },
+    {
+      "id": "6",
+      "productName": "Tiramisu",
+      "name": "",
+      "address": "",
+      "quantity": "",
+      "date": "Sun Mar 24 2024"
+    },
+    {
+      "id": "6",
+      "productName": "Tiramisu",
+      "name": "",
+      "address": "",
+      "quantity": "",
+      "date": "Sun Mar 24 2024"
+    },
+    {
+      "id": "6",
+      "productName": "Tiramisu",
+      "name": "",
+      "address": "",
+      "quantity": "",
+      "date": "Sun Mar 24 2024"
+    },
+    {
+      "id": "6",
+      "productName": "Tiramisu",
+      "name": "",
+      "address": "",
+      "quantity": "",
+      "date": "Sun Mar 24 2024"
+    },
+    {
+      "id": "6",
+      "productName": "Tiramisu",
+      "name": "",
+      "address": "",
+      "quantity": "",
+      "date": "Sun Mar 24 2024"
+    },
+    {
+      "id": "6",
+      "productName": "Tiramisu",
+      "name": "Lee",
+      "address": "Vector",
+      "quantity": "2",
+      "date": "Sun Mar 24 2024"
+    },
+    {
+      "id": "6",
+      "productName": "Tiramisu",
+      "name": "",
+      "address": "",
+      "quantity": "",
+      "date": "Sun Mar 24 2024"
+    },
+    {
+      "id": "6",
+      "productName": "Tiramisu",
+      "name": "Alex Floyd Lee",
+      "address": "120 Erskine Pl APT",
+      "quantity": "",
+      "date": "Sun Mar 24 2024"
+    },
+    {
+      "id": "6",
+      "productName": "Tiramisu",
+      "name": "wdsasd",
+      "address": "1 Legoland Wy",
+      "quantity": "",
+      "date": "Sun Mar 24 2024"
+    },
+    {
+      "id": "6",
+      "productName": "Tiramisu",
+      "name": "alex",
+      "address": "the thrid",
+      "quantity": "2",
+      "date": "Sun Mar 24 2024"
+    },
+    {
+      "id": "6",
+      "productName": "Tiramisu",
+      "name": "Lee Floyd McLeod Jr",
+      "address": "6 Mcfadden Circle",
+      "quantity": "",
+      "date": "Sun Mar 24 2024"
+    },
+    {
+      "id": "6",
+      "productName": "Tiramisu",
+      "name": "wdsasd",
+      "address": "1 Legoland Wy",
+      "quantity": "2",
+      "date": "Sun Mar 24 2024"
+    },
+    {
+      "id": "6",
+      "productName": "Tiramisu",
+      "name": "pop",
+      "address": "dots",
+      "quantity": "4",
+      "date": "Sun Mar 24 2024"
+    },
+    {
+      "id": "6",
+      "productName": "Tiramisu",
+      "name": "pop",
+      "address": "dots",
+      "quantity": "4",
+      "date": "Sun Mar 24 2024"
+    },
+    {
+      "id": "6",
+      "productName": "Tiramisu",
+      "name": "pop",
+      "address": "does",
+      "quantity": "2",
+      "date": "Sun Mar 24 2024"
+    },
+    {
+      "id": "6",
+      "productName": "Tiramisu",
+      "name": "wdsasd",
+      "address": "1 Legoland Wy",
+      "quantity": "3",
+      "date": "Sun Mar 24 2024"
+    },
+    {
+      "id": "6",
+      "productName": "Tiramisu",
+      "name": "asdcxz",
+      "address": "qwedsdc",
+      "quantity": "2",
+      "date": "Sun Mar 24 2024"
+    },
+    {
+      "id": "6",
+      "productName": "Tiramisu",
+      "name": "Pop",
+      "address": "Rock",
+      "quantity": "2",
+      "date": "Sun Mar 24 2024"
+    },
+    {
+      "id": "6",
+      "productName": "Tiramisu",
+      "name": "Pop",
+      "address": "Dotes",
+      "quantity": "2",
+      "date": "Sun Mar 24 2024"
+    },
+    {
+      "id": "5",
+      "productName": "Donut",
+      "name": "Pop",
+      "address": "Dosss",
+      "quantity": "2",
+      "date": "Sun Mar 24 2024"
+    },
+    {
+      "id": "5",
+      "productName": "Donut",
+      "name": "Pop",
+      "address": "Rots",
+      "quantity": "2",
+      "date": "Sun Mar 24 2024"
+    },
+    {
+      "id": "4",
+      "productName": "Sugar Cookie",
+      "name": "Pop",
+      "address": "Razzzle Ave ",
+      "quantity": "12",
+      "date": "Mon Mar 25 2024"
+    },
+    {
+      "id": "5",
+      "productName": "Donut",
+      "name": "pop",
+      "address": "Razzzele",
+      "quantity": "3",
+      "date": "Mon Mar 25 2024"
+    },
+    {
+      "id": "5",
+      "productName": "Donut",
+      "name": "Lee",
+      "address": "roose",
+      "quantity": "1",
+      "date": "Mon Mar 25 2024"
+    },
+    {
+      "id": "12",
+      "productName": "Blondie",
+      "name": "Alex Wong",
+      "address": "123 Memory Lane ",
+      "quantity": "6",
+      "date": "Mon Mar 25 2024"
+    },
+    {
+      "id": "7",
+      "productName": "Flan",
+      "name": "",
+      "email": "",
+      "address": "",
+      "quantity": "",
+      "date": "Mon Mar 25 2024"
+    },
+    {
+      "id": "7",
+      "productName": "Flan",
+      "name": "Alexlee",
+      "email": "forset@gamil123.com",
+      "phoneNumber": "452-789-42565",
+      "address": "Red Road Lane",
+      "quantity": "1",
+      "date": "Mon Mar 25 2024"
+    },
+    {
+      "id": "14",
+      "productName": "Chocolate Cake",
+      "name": "lee",
+      "email": "alwex@123",
+      "phoneNumber": "123-345-6778",
+      "address": "redwine",
+      "quantity": "12",
+      "date": "Mon Mar 25 2024"
+    },
+    {
+      "id": "11",
+      "productName": "Cookie Brownie",
+      "name": "Hunt",
+      "email": "hunt@masterdev.com",
+      "phoneNumber": "777-777-7777",
+      "address": "100 infiniteloop ave",
+      "quantity": "25",
+      "date": "Mon Mar 25 2024"
+    },
+    {
+      "id": "7",
+      "productName": "Flan",
+      "name": "alliyah",
+      "email": "123@hotmail.com",
+      "phoneNumber": "1234567897",
+      "address": "yonkers",
+      "quantity": "2",
+      "date": "Thu Mar 28 2024"
+    },
+    {
+      "id": "14",
+      "productName": "Chocolate Cake",
+      "name": "chelsea",
+      "email": "123 @hotmail",
+      "phoneNumber": "8454100290",
+      "address": "123ave",
+      "quantity": "2",
+      "date": "Fri Mar 29 2024"
+    },
+    {
+      "id": "8",
+      "productName": "Ice Cream Cake",
+      "name": "Lee",
+      "email": "123@hotmail.com",
+      "phoneNumber": "8454100290",
+      "address": "123ave",
+      "quantity": "2",
+      "date": "Tue Apr 02 2024"
+    },
+    {
+      "id": "4",
+      "productName": "Sugar Cookie",
+      "name": "",
+      "email": "",
+      "phoneNumber": "",
+      "address": "",
+      "quantity": "",
+      "date": "Tue Apr 02 2024"
+    },
+    {
+      "id": "25",
+      "productName": "Pound Cake",
+      "name": "Gabby",
+      "email": "123@hotmail.com",
+      "phoneNumber": "16319227807",
+      "address": "123Yonkers Ave",
+      "quantity": "2",
+      "date": "Wed Apr 03 2024"
+    },
+    {
+      "id": "24",
+      "productName": "Danish",
+      "name": "Lu",
+      "email": "123@hotmail.com",
+      "phoneNumber": "16319227807",
+      "address": "123 Spring vally ave",
+      "quantity": "2",
+      "date": "Wed Apr 03 2024"
+    }
+  ]
+}

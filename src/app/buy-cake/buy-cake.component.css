@@ -1,0 +1,81 @@
+.background-img{
+    background: url(/assets/Images/PastryBackground.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+.buy-box{
+    display: flex;
+    justify-content: center;
+}
+
+
+.buy-card{
+    width: 150px;
+    height: 220px;
+    text-align: center;
+    align-items: center;
+    border: none;
+    margin-top: 40px;
+    box-shadow: 10px 5px 5px rgba(0, 255, 255, 0.941);
+    color: hotpink;
+}
+
+
+.form-container{
+    width: 250px;
+    height: 350px;
+    border: 3px solid hotpink;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    opacity: 0.6;
+
+}
+
+.img-box{
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    margin: 0px;
+    overflow: hidden;
+    width: 150px;
+    height: 100px;
+}
+
+.contain{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 50px;
+}
+
+.center-submit{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.submit-card{
+    width: 300px;
+}
+
+.submit-container{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    font-size: 18px;
+   text-align: center;
+   text-transform: capitalize;
+}
+
+input{
+    border: none;
+    border-bottom: 5px solid hotpink;
+    box-shadow: 10px 5px 5px aqua;
+}

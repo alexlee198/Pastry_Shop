@@ -1,0 +1,23 @@
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-radius: 5px;
+    height: 70px;
+    padding: 3px;
+    background-color: rgb(236, 96, 166);
+    color: white;
+    padding-top: 10px;
+}
+
+.social-container{
+    font-size: 24px;
+    letter-spacing: 15px;
+    padding-bottom: 7px;
+}
+
+
+
+
+

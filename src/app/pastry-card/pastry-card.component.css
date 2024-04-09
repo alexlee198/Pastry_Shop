@@ -1,0 +1,88 @@
+.background-img{
+    background: url(/assets/Images/PastryBackground.jpg) no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100%;
+
+}
+
+.search-container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    padding:30px;
+
+}
+
+.search-input{
+    border: none;
+    border-bottom: 1px solid black ;
+    border-radius: 10px;
+    font-size: 24px;
+    width: 200px;
+    height: 40px;
+}
+
+
+.contain{
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+    padding-bottom: 25px;
+}
+
+.card{
+    background-color: white;
+}
+
+.card-container{
+    width: 175px;
+    height: 280px;
+    box-shadow: 10px 5px 5px rgba(0, 255, 255, 0.941);
+    border-radius: 5px;
+
+
+}
+
+.img-box{ 
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    margin: 0px;
+    overflow: hidden;
+    width: 175px;
+    height: 100px;
+}
+
+img{
+    width: 100px;
+    border-radius: 150px;
+    object-fit: fill;
+}
+
+
+.pastry-container{
+    color: hotpink;
+    padding-top: 10px;
+    font-size: 18px;
+    font-family: "Roboto Serif", serif;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 0px;
+}
+
+button{
+    width: 75px;
+    height:25px; 
+    cursor: pointer; 
+    background-color: hotpink; 
+    color:aqua;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+}
+
+
