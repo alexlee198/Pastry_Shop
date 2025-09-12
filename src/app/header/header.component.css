@@ -8,28 +8,26 @@
 
 .logo-title{
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin-left:5px ;
+}
+
+.logo-title img {
+  width: 60px;
+  border-radius: 50%;
+  margin-right: 10px;
 }
 
 .cake-title{
-    display: inline-block;
     font-size: 24px;
     font-weight: bold;
     color: aqua;
     margin: 0px;
-    margin-left: 5px;
     
 }
 
-img{
 
-    width: 60px;
-    border-radius: 80px;
-}
 
-.search-input{
+/* .search-input{
     border: none;
     border-bottom: 2px solid black;
 }
@@ -41,4 +39,56 @@ img{
     border: none;
     border-radius: 15px;
     margin-left: 10px;
+} */
+
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* space between icons */
+  font-size: 28px;
+  color: rgba(252, 252, 252, 0.8);
+  cursor: pointer;
+}
+
+.mat-icon {
+    color: aqua;
+  transition: color 0.3s;
+}
+
+
+@media (max-width: 768px) {
+  .cake-title{
+    font-size: 20px;
+  }
+
+  .logo-title {
+    margin-bottom: 10px;
+  }
+
+  .header-icons {
+    gap: 10px;
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    flex-direction: column;     /* stack logo/title and icons */
+    justify-content: center;
+    height: auto;               /* let height grow naturally */
+    padding: 10px;
+  }
+
+  .logo-title {
+    margin-bottom: 8px;
+  }
+
+  .cake-title {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .header-icons {
+    font-size: 22px;
+  }
 }

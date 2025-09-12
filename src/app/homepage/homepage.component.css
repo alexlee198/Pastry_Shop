@@ -1,0 +1,70 @@
+.hero-section {
+  background: url('/assets/Images/PastryBackground.jpg') no-repeat center center;
+  background-size: cover;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.hero-content h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 48px;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+}
+
+.hero-content p {
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+}
+
+.about-section {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #fff0f5;
+  color: #6b4226;
+}
+
+.about-section h2 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.featured-section {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.featured-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.featured-card {
+  width: 150px;
+  text-align: center;
+}
+
+.featured-card img {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+}
+
+.featured-card p {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #ec6096;
+}
+

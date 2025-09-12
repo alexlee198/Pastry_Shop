@@ -26,7 +26,7 @@ export class BuyCakeComponent {
     id: "",
     img:"",
     name: "",
-    catergory: "",
+    category: "",
     price: 0
   } 
 

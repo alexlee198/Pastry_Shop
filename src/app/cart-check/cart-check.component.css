@@ -1,0 +1,261 @@
+/* .cart-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff0f5;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.cart-item {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ec6096;
+}
+
+.cart-item img {
+  width: 80px;
+  height: 60px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.item-info h3 {
+  margin: 0;
+  color: #ec6096;
+}
+
+.quantity-buttons button {
+  margin-right: 5px;
+}
+
+.total {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: right;
+  margin-top: 10px;
+}
+
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.checkout-form input {
+  padding: 8px;
+  border-radius: 10px;
+  border: 1px solid #ec6096;
+}
+
+.order-confirmation {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 15px;
+  background-color: #e0ffe0;
+  border-radius: 15px;
+  text-align: center;
+} */
+
+
+.cart-page-content {
+  flex: 1; /* takes all available space in .main-content */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertically center the confirmation box */
+  min-height: 80vh;        /* ensures enough height so footer stays at bottom */
+}
+
+
+.cart-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: #ec6096;
+  margin: 20px 0;
+}
+
+.cart-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.cart-left {
+  flex: 2;
+  background: #fffafc;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.cart-right {
+  flex: 1;
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  height: fit-content;
+  max-width: 400px;
+  margin:0 auto;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #f1c6d3;
+  gap: 15px;
+}
+
+.cart-item img {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.item-info h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #ec6096;
+}
+
+.price {
+  margin: 5px 0;
+  font-weight: bold;
+  color: #333;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quantity button {
+  background: #ec6096;
+  color: #fff;
+  border: none;
+  padding: 5px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.quantity span {
+  font-size: 16px;
+}
+
+.remove-btn {
+  margin-top: 8px;
+  font-size: 14px;
+  color: red;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.total {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.checkout-form input {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ec6096;
+  font-size: 16px;
+}
+
+.checkout-form button {
+  background: #ec6096;
+  color: #fff;
+  font-size: 18px;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.checkout-form button:hover {
+  background: #d45582;
+}
+
+.order-confirmation {
+  max-width: 400px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #e0ffe0;
+  border-radius: 15px;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .cart-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .cart-left,
+  .cart-right {
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cart-right{
+    max-width: 100%;
+  }
+
+  .cart-item img {
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+  }
+
+  .item-info {
+    width: 100%;
+  }
+
+  .quantity {
+    justify-content: flex-start;
+  }
+}
+
+ @media (max-width: 480px) {
+  .cart-title {
+    font-size: 22px;
+  }
+
+  .checkout-form input,
+  .checkout-form button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .total {
+    font-size: 18px;
+  }
+}

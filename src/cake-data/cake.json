@@ -4,232 +4,246 @@
       "id": "1",
       "img": "/assets/Images/oatmeal cookies.jpg",
       "name": "Oatmeal Cookie",
-      "catergory": "Cookies",
+      "category": "Cookies",
       "price": 2
     },
     {
       "id": "2",
       "img": "assets/Images/Carrot.jpg",
       "name": "Carrot Cake",
-      "catergory": "Cake",
+      "category": "Cake",
       "price": 5
     },
     {
       "id": "3",
       "img": "/assets/Images/Red Velvet.jpg",
       "name": "Red Velvet",
-      "catergory": "Cake",
+      "category": "Cake",
       "price": 6
     },
     {
       "id": "4",
       "img": "/assets/Images/Sugar Cookie.jpg",
       "name": "Sugar Cookie",
-      "catergory": "Cookies",
+      "category": "Cookies",
       "price": 2
     },
     {
       "id": "5",
       "img": "assets/Images/donut.jpg",
       "name": "Donut",
-      "catergory": "Pastry",
+      "category": "Pastry",
       "price": 1
     },
     {
       "id": "6",
       "img": "assets/Images/Tiramisu.jpg",
       "name": "Tiramisu",
-      "catergory": "Cake",
+      "category": "Cake",
       "price": 5
     },
     {
       "id": "7",
       "img": "assets/Images/Flan.jpg",
       "name": "Flan",
-      "catergory": "Cake",
+      "category": "Cake",
       "price": 6
     },
     {
       "id": "8",
       "img": "assets/Images/IceCreamCake.jpg",
       "name": "Ice Cream Cake",
-      "catergory": "Cake",
+      "category": "Cake",
       "price": 5
     },
     {
       "id": "9",
       "img": "assets/Images/Macadamia.jpg",
       "name": "Macadamia",
-      "catergory": "Cookies",
+      "category": "Cookies",
       "price": 2
     },
     {
       "id": "10",
       "img": "assets/Images/Brownie.jpg",
       "name": "Brownie",
-      "catergory": "Brownie",
+      "category": "Brownie",
       "price": 4
     },
     {
       "id": "11",
       "img": "assets/Images/CookieBrownie.jpg",
       "name": "Cookie Brownie",
-      "catergory": "Brownie",
+      "category": "Brownie",
       "price": 4
     },
     {
       "id": "12",
       "img": "assets/Images/Blondie.jpg",
       "name": "Blondie",
-      "catergory": "Brownie",
+      "category": "Brownie",
       "price": 4
     },
     {
       "id": "14",
       "img": "assets/Images/ChocolateCake.jpg",
       "name": "Chocolate Cake",
-      "catergory": "Cake",
+      "category": "Cake",
       "price": 5
     },
     {
       "id": "15",
       "img": "assets/Images/StrawberryCake.jpg",
       "name": "Strawberry Cake",
-      "catergory": "Cake",
+      "category": "Cake",
       "price": 5
     },
     {
       "id": "16",
       "img": "assets/Images/CheeseCake.jpg",
       "name": "Cheese Cake",
-      "catergory": "Cake",
+      "category": "Cake",
       "price": 5
     },
     {
       "id": "17",
       "img": "assets/Images/CoffeeCake.jpg ",
       "name": "Coffee Cake",
-      "catergory": "Cake",
+      "category": "Cake",
       "price": 4
     },
     {
       "id": "18",
       "img": "assets/Images/Berry Danish.jpg",
       "name": "Berry Danish",
-      "catergory": "Pastry",
+      "category": "Pastry",
       "price": 3
     },
     {
       "id": "19",
       "img": "assets/Images/Blueberry Muffin.jpg",
       "name": "Blueberry Muffin",
-      "catergory": "Pastry",
+      "category": "Pastry",
       "price": 3
     },
     {
       "id": "20",
       "img": "assets/Images/Chip Muffin.jpg",
       "name": "Chip Muffin",
-      "catergory": "Pastry",
+      "category": "Pastry",
       "price": 3
     },
     {
       "id": "21",
       "img": "assets/Images/Cannoli.jpg",
       "name": "Cannoli",
-      "catergory": "Pastry",
+      "category": "Pastry",
       "price": 3
     },
     {
       "id": "22",
       "img": "assets/Images/Cinnamon Rolls.jpg",
       "name": "Cinnamon Rolls",
-      "catergory": "Pastry",
+      "category": "Pastry",
       "price": 3
     },
     {
       "id": "23",
       "img": "assets/Images/Chocolate Cross.jpg",
       "name": "Chocolate Croissant",
-      "catergory": "Pastry",
+      "category": "Pastry",
       "price": 3
     },
     {
       "id": "24",
       "img": "assets/Images/Danish.jpg",
       "name": "Danish",
-      "catergory": "Pastry",
+      "category": "Pastry",
       "price": 3
     },
     {
       "id": "25",
       "img": "assets/Images/Pound Cake.jpg",
       "name": "Pound Cake",
-      "catergory": "Cake",
+      "category": "Cake",
       "price": 4
     },
     {
       "id": "26",
       "img": "assets/Images/Rainbow Cookie.jpg",
       "name": "Rainbow Cookies",
-      "catergory": "Cookies",
+      "category": "Cookies",
       "price": 2
     },
     {
       "id": "27",
       "img": "assets/Images/Tassies.jpg",
       "name": "Tassies",
-      "catergory": "Cookies",
+      "category": "Cookies",
       "price": 2
     },
     {
       "id": "28",
       "img": "assets/Images/Snickerdoodle.jpg",
       "name": "Snickerdoodle",
-      "catergory": "Cookies",
+      "category": "Cookies",
       "price": 2
     },
     {
       "id": "29",
       "img": "assets/Images/Macarons.jpg",
       "name": "Macarons",
-      "catergory": "Cookies",
+      "category": "Cookies",
       "price": 2
     },
     {
       "id": "30",
       "img": "assets/Images/Ginger.jpg",
       "name": "Gingersnaps",
-      "catergory": "Cookeis",
+      "category": "Cookeis",
       "price": 2
     },
     {
       "id": "31",
       "img": "assets/Images/Chocolate Chip.jpg ",
       "name": "Chocolate Chip",
-      "catergory": "Cookies",
+      "category": "Cookies",
       "price": 2
     },
     {
       "id": "32",
       "img": "assets/Images/BlackCookie.jpg",
       "name": "Black & White Cookie",
-      "catergory": "Cookies",
+      "category": "Cookies",
       "price": 2
     },
     {
       "id": "33",
       "img": "assets/Images/oreo.jpg ",
       "name": "Oreo Brownie",
-      "catergory": "Brownie",
+      "category": "Brownie",
       "price": 4
     },
     {
-      "id": "2",
+      "id": "34",
       "img": "assets/Images/Turtle.jpg",
       "name": "Turtle Brownie",
-      "catergory": "Brownie",
+      "category": "Brownie",
       "price": 4
+    },
+    {
+      "id": "35",
+      "img": "assets/Images/AF.jfif",
+      "name": "Apple Fritter",
+      "category": "Pastry",
+      "price": 3
+    },
+    {
+      "id": "36",
+      "img": "assets/Images/Crullers.jfif",
+      "name": "Crullers",
+      "category": "Pastry",
+      "price": 2
     }
   ],
   "orders": [
@@ -576,6 +590,96 @@
       "address": "123 Spring vally ave",
       "quantity": "2",
       "date": "Wed Apr 03 2024"
+    },
+    {
+      "id": "30",
+      "productName": "Gingersnaps",
+      "name": "",
+      "email": "",
+      "phoneNumber": "",
+      "address": "",
+      "quantity": "",
+      "date": "Mon Feb 03 2025"
+    },
+    {
+      "id": "7",
+      "productName": "Flan",
+      "name": "",
+      "email": "",
+      "phoneNumber": "",
+      "address": "",
+      "quantity": "",
+      "date": "Tue Sep 09 2025"
+    },
+    {
+      "id": "27",
+      "productName": "Tassies",
+      "name": "Lee McLeod",
+      "email": "alexlee111@icloud.com",
+      "phoneNumber": "6319227807",
+      "address": "120 Erskine Pl",
+      "quantity": "2",
+      "date": "Tue Sep 09 2025"
+    },
+    {
+      "id": "1757458682374",
+      "productName": "Cannoli x1, Cinnamon Rolls x1, Chocolate Croissant x1",
+      "name": "",
+      "email": "",
+      "phoneNumber": "",
+      "address": "",
+      "quantity": 3,
+      "date": "Tue Sep 09 2025"
+    },
+    {
+      "id": "1757518973964",
+      "productName": "Oreo Brownie x2, Turtle Brownie x2",
+      "name": "Lee McLeod",
+      "email": "alexlee111@icloud.com",
+      "phoneNumber": "",
+      "address": "120 Erskine Pl",
+      "quantity": 4,
+      "date": "Wed Sep 10 2025"
+    },
+    {
+      "id": "1757534227427",
+      "productName": "Sugar Cookie x1, Macadamia x1, Blueberry Muffin x1",
+      "name": "",
+      "email": "",
+      "phoneNumber": "",
+      "address": "",
+      "quantity": 3,
+      "date": "Wed Sep 10 2025"
+    },
+    {
+      "id": "1757535606589",
+      "productName": "Turtle Brownie x2, Oreo Brownie x2, Blondie x2, Cookie Brownie x2, Brownie x2",
+      "name": "Lee McLeod",
+      "email": "alexlee111@icloud.com",
+      "phoneNumber": "",
+      "address": "120 Erskine Pl",
+      "quantity": 10,
+      "date": "Wed Sep 10 2025"
+    },
+    {
+      "id": "1757536242801",
+      "productName": "Tiramisu x1, Sugar Cookie x1, Berry Danish x1, Black & White Cookie x1",
+      "name": "Denise A O'Connor  Wade",
+      "email": "altheaoconnor@hotmail.com",
+      "phoneNumber": "7185768256",
+      "address": "6 Mcfadden Circle",
+      "quantity": 4,
+      "date": "Wed Sep 10 2025"
+    },
+    {
+      "id": "1757548979094",
+      "productName": "Crullers x2, Apple Fritter x2, Donut x2",
+      "name": "wdsasd",
+      "email": "plased@gmail.com",
+      "phoneNumber": "8454100290",
+      "address": "1 Legoland Wy",
+      "quantity": 6,
+      "date": "Wed Sep 10 2025"
     }
   ]
 }

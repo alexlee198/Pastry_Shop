@@ -1,0 +1,99 @@
+<!-- <div class="cart-container">
+  <h2>Shopping Cart</h2>
+
+    <div *ngIf="cartItems.length > 0; else emptyCart">
+
+    <div  *ngFor="let item of cartItems" class="cart-item">
+
+      <img [src]="item.pastry.img" alt="{{item.pastry.name}}">
+
+      <div class="item-info">
+        <h3>{{ item.pastry.name }}</h3>
+        <p>${{ item.pastry.price }}</p>
+      <div class="quantity">
+
+        <button (click)="decrease(item)">-</button>
+          <span>{{ item.quantity }}</span>
+        <button (click)="increase(item)">+</button>
+      </div>
+        <button class="remove-btn" (click)="remove(item)">Remove</button>
+      </div>
+    </div>
+
+
+
+  <div class="cart-right">
+  <p class>Total: ${{ total }}</p>
+  <form #form="ngForm" (ngSubmit)="checkout(form)">
+    <input type="text" name="name" placeholder="Name" ngModel required />
+    <input type="text" name="email" placeholder="Email" ngModel required />
+    <input type="text" name="phoneNumber" placeholder="Phone" ngModel required />
+    <input type="text" name="address" placeholder="Address" ngModel required />
+    <button type="submit">Place Order</button>
+  </form>
+  </div>
+</div>
+<ng-template #emptyCart>
+  <p>Your cart is empty.</p>
+</ng-template>
+
+<div *ngIf="submitted">
+  <h3>Order Completed!</h3>
+  <p>{{ orderSubmitted?.productName }}</p>
+  <p>Total items: {{ orderSubmitted?.quantity }}</p>
+  <p>Thank you for your order!</p>
+  
+</div>
+</div>
+ -->
+
+ <div class="cart-page-content">
+  <h2 class="cart-title">🧁 Your Shopping Cart</h2>
+
+<div class="cart-container">
+  <!-- LEFT: Cart Items -->
+  <div class="cart-left">
+    <div *ngIf="cartItems.length > 0; else emptyCart">
+      <div *ngFor="let item of cartItems" class="cart-item">
+        <img [src]="item.pastry.img" alt="{{item.pastry.name}}">
+        <div class="item-info">
+          <h3>{{ item.pastry.name }}</h3>
+          <p class="price">${{ item.pastry.price }}</p>
+
+          <div class="quantity">
+            <button (click)="decrease(item)">-</button>
+            <span>{{ item.quantity }}</span>
+            <button (click)="increase(item)">+</button>
+          </div>
+
+          <button class="remove-btn" (click)="remove(item)">🗑 Remove</button>
+        </div>
+      </div>
+    </div>
+
+    <ng-template #emptyCart>
+      <p class="empty-cart">Your cart is empty 🍩</p>
+    </ng-template>
+  </div>
+
+  <!-- RIGHT: Checkout -->
+  <div class="cart-right" *ngIf="cartItems.length > 0">
+    <p class="total">Total: ${{ total }}</p>
+
+    <form class="checkout-form" #form="ngForm" (ngSubmit)="checkout(form)">
+      <input type="text" name="name" placeholder="Name" ngModel required />
+      <input type="text" name="email" placeholder="Email" ngModel required />
+      <input type="text" name="phoneNumber" placeholder="Phone" ngModel required />
+      <input type="text" name="address" placeholder="Address" ngModel required />
+
+      <button type="submit">Place Order</button>
+    </form>
+  </div>
+</div>
+
+<!-- Order confirmation -->
+<div *ngIf="submitted" class="order-confirmation">
+  <h3>🎉 Order Completed!</h3>
+  <p>Thank you for your order 💖</p>
+</div>
+</div>

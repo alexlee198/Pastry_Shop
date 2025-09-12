@@ -10,7 +10,8 @@
     justify-content: center;
     text-align: center;
     gap: 10px;
-    padding:30px;
+    padding:20px;
+    flex-wrap: wrap;
 
 }
 
@@ -23,19 +24,64 @@
     height: 40px;
 }
 
+.pastry-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
 
-.contain{
-    min-height: 100vh;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    gap: 20px;
-    padding-bottom: 25px;
+
+.pastry-card {
+  width: 180px;
+  height: 280px;              /* fixed height for all cards */
+  display: flex;
+  flex-direction: column;     /* stack content vertically */
+  justify-content: space-between; /* push button down */
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+  background-color: #fff0f5;
+  padding: 10px;
+}
+
+.pastry-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .card{
     background-color: white;
+}
+
+.pastry-info {
+  flex-grow: 1;               /* take up remaining space */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;  /* keep text above button */
+  gap: 4px;
+  color: #ec6096;
+}
+
+
+
+.pastry-info h3 {
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+.pastry-info p {
+  margin: 3px 0;
+  font-size: 14px;
+}
+
+.pastry-info p.name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #d63384;   /* brighter pink than the other text */
+  margin: 4px 0;
 }
 
 .card-container{
@@ -47,7 +93,7 @@
 
 }
 
-.img-box{ 
+/* .img-box{ 
     display:flex;
     justify-content: center;
     align-content: center;
@@ -61,6 +107,15 @@ img{
     width: 100px;
     border-radius: 150px;
     object-fit: fill;
+} */
+
+
+.img-box img {
+  width: 140px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-top: 10px;
 }
 
 
@@ -74,15 +129,45 @@ img{
     margin: 0px;
 }
 
-button{
-    width: 75px;
-    height:25px; 
-    cursor: pointer; 
-    background-color: hotpink; 
-    color:aqua;
-    font-size: 15px;
-    font-weight: bold;
-    border: none;
+.mat-raised-button{
+  min-width: 100px;
+  padding: 6px 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  text-transform: none;
+}
+
+.search-btn {
+  background-color: hotpink !important;
+  color: white !important;
+  font-size: 16px;
+  padding: 8px 20px;
+  border-radius: 20px;
+}
+
+.cart-btn {
+  background-color: #ec6096 !important;
+  color: white !important;
+  font-size: 14px;
+  padding: 5px 15px;
+  border-radius: 12px;
+}
+
+
+.bottom-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin-top: auto;  /* pushes it to bottom if parent uses flex layout */
+}
+
+.bottom-button button {
+  background-color: hotpink !important;
+  color: white !important;
+  font-size: 18px;
+  padding: 12px 24px;
+  border-radius: 30px;
 }
 
 

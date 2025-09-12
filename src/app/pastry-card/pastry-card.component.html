@@ -2,8 +2,9 @@
 
   <div class="search-container">
     <mat-form-field>
-      <mat-label>Pastry</mat-label>
+      <mat-label>Category</mat-label>
       <select [(ngModel)]="selected" (change)="updateSorting($event)" matNativeControl required>
+        <option value="">All</option>
         <option value="Cookies">Cookies</option>
         <option value="Brownie">Brownie</option>
         <option value="Cake">Cake</option>
@@ -14,29 +15,36 @@
     <mat-form-field>
       <input matInput type="text" [(ngModel)]="cakeSearch" placeholder="Search A Pastry" />
     </mat-form-field>
-    <button style="height: 55px; text-align: center;" mat-raised-button type="button" (click)="searchPastry()">
+    <!-- <button style="height: 55px; text-align: center;" mat-raised-button type="button" (click)="searchPastry()">
       Search
-    </button>
+    </button> -->
+    <button class= "search-btn" mat-raised-button color="accent" (click)="searchPastry()">Search</button>
+    <button class= "search-btn" mat-raised-button color="primary" (click)="showAllPastries()">Show All</button>
   </div>
 
-  <div class="contain">
-    <mat-card *ngFor="let pastry of cakes" class="card">
-      <mat-card-content style="padding: 5px" class="card-container">
+  <div class="pastry-grid">
+    <mat-card *ngFor="let pastry of cakes" class="pastry-card" >
+      <!-- <mat-card-content style="padding: 5px" class="card-container"> -->
         <div class="img-box">
-          <img style="border-radius: 200px" mat-card-sm-image [src]="pastry.img" alt="" />
+          <img [src]="pastry.img" alt="{{pastry.name}}" />
+          <!-- <img style="border-radius: 200px" mat-card-sm-image [src]="pastry.img" alt="" /> -->
         </div>
-        <div class="pastry-container">
-          <h2>{{ pastry.name }}</h2>
-          <p>{{ pastry.catergory }}</p>
+        <div class="pastry-info">
+          <p class="name">{{ pastry.name }}</p>
+          <p>{{ pastry.category }}</p>
           <p>${{ pastry.price }}.00</p>
 
-          <a routerLink="/buy-cake/{{ pastry.id }}" routerLinkActive="activebutton">
-            <button style="background-color: hotpink; color: aqua" mat-raised-button type="button">
-              Buy
-            </button>
-          </a>
+          <button class="cart-btn" mat-raised-button color="primary" (click)="addToCart(pastry)">
+          Add to Cart
+          </button>
         </div>
-      </mat-card-content>
+      <!-- </mat-card-content> -->
     </mat-card>
+    
+  </div>
+  <div class="bottom-button">
+    <button mat-raised-button color="accent" (click)="showAllPastries()">
+      Show All Pastries
+    </button>
   </div>
 </div>
