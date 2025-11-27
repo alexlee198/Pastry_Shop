@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Pastry } from '../../cake-models/pastry';
-import { Observable } from 'rxjs';
+import { Observable,map } from 'rxjs';
 
 
 @Injectable({
@@ -9,20 +9,23 @@ import { Observable } from 'rxjs';
 })
   export class CakeService {
 
-  url: string ="http://localhost:3000/pastries";
-
+  url: string = "assets/pastries.json";
 
 
   constructor(private http:HttpClient) {}
 
-  getCakes():Observable<Array<Pastry>>{
-    return this.http.get<Array<Pastry>>(this.url)
+  getCakes(): Observable<Array<Pastry>> {
+    return this.http.get<{ pastries: Array<Pastry> }>(this.url).pipe(
+      map(res => res.pastries)  // unwrap pastries array
+    );
   }
 
-  getCake(id: string){
-    return this.http.get<Pastry>(this.url+'/' + id)
+  // Get one pastry by ID
+  getCake(id: string): Observable<Pastry | undefined> {
+    return this.getCakes().pipe(
+      map(cakes => cakes.find(c => c.id === id))
+    );
   }
-
 
 }
 

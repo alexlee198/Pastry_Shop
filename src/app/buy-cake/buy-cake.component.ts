@@ -16,34 +16,41 @@ import { Pastry } from '../../cake-models/pastry';
 @Component({
   selector: 'app-buy-cake',
   standalone: true,
-  imports: [MatFormFieldModule, MatInputModule, MatSelectModule, FormsModule, MatCardModule, CommonModule, MatButtonModule,MatIcon],
+  imports: [
+    MatFormFieldModule,
+    MatInputModule,
+    MatSelectModule,
+    FormsModule,
+    MatCardModule,
+    CommonModule,
+    MatButtonModule,
+    MatIcon,
+  ],
   templateUrl: './buy-cake.component.html',
   styleUrl: './buy-cake.component.css',
 })
 export class BuyCakeComponent {
   id: any;
   pastry: Pastry = {
-    id: "",
-    img:"",
-    name: "",
-    category: "",
-    price: 0
-  } 
+    id: '',
+    img: '',
+    name: '',
+    category: '',
+    price: 0,
+  };
 
-  submitted: boolean = false
+  submitted: boolean = false;
 
-  orderSubmitted: Order =  {
-      id: "",
-      productName: "",
-      name: "",
-      email:"",
-      phoneNumber:(123)-123-1234,
-      address: "",
-      quantity: 0,
-      date: ""
-  }
-
-
+  orderSubmitted: Order = {
+    id: '',
+    productName: '',
+    name: '',
+    email: '',
+    phoneNumber: 123 - 123 - 1234,
+    address: '',
+    quantity: 0,
+    date: '',
+  };
 
   constructor(
     private activatedRoute: ActivatedRoute,
@@ -52,41 +59,44 @@ export class BuyCakeComponent {
     private orderService: OrderService
   ) {}
 
-
   saveOrder(form: NgForm) {
-    console.log("checked", form.value.checked)
-    
+    console.log('checked', form.value.checked);
+
     const order: Order = {
       id: this.id,
 
       productName: this.pastry.name,
       name: form.value.name,
-      email:form.value.email,
-      phoneNumber:form.value.phoneNumber,
+      email: form.value.email,
+      phoneNumber: form.value.phoneNumber,
       address: form.value.address,
       quantity: form.value.quantity,
-      date: new Date().toDateString()
-
+      date: new Date().toDateString(),
     };
 
     console.log('form', form);
 
     console.log(order);
-    this.orderService.addOrder(order).subscribe(data =>{
-      this.submitted = true
-      this.orderSubmitted = order
-      console.log(data)
-    })
+    this.orderService.addOrder(order).subscribe((data) => {
+      this.submitted = true;
+      this.orderSubmitted = order;
+      console.log(data);
+    });
   }
 
   ngOnInit(): void {
     this.activatedRoute.paramMap.subscribe((param) => {
       this.id = param.get('id');
 
-      this.cakeService.getCake(this.id.toString()).subscribe((data: Pastry) => {
-        console.log(data)
-        this.pastry = data;
-      });
+      this.cakeService
+        .getCake(this.id.toString())
+        .subscribe((data: Pastry | undefined) => {
+          if (data) {
+            this.pastry = data;
+          } else {
+            console.error('Pastry not found!');
+          }
+        });
     });
   }
 }

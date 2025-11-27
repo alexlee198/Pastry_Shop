@@ -3,18 +3,22 @@
     justify-content: space-between;
     align-items: center;
     background-color: rgb(236, 96, 166);
-    height: 80px
+    height: 80px;
+    padding: 0 20px; /* keeps spacing clean on small screens */
+    box-sizing: border-box;
 }
 
 .logo-title{
     display: flex;
     align-items: center;
+    gap: 8px
 }
 
 .logo-title img {
-  width: 60px;
+  width: 55px;
+  height: 55px;
   border-radius: 50%;
-  margin-right: 10px;
+  
 }
 
 .cake-title{
@@ -45,14 +49,15 @@
   display: flex;
   align-items: center;
   gap: 15px; /* space between icons */
-  font-size: 28px;
+  font-size: 20px;
   color: rgba(252, 252, 252, 0.8);
   cursor: pointer;
 }
 
 .mat-icon {
-    color: aqua;
-  transition: color 0.3s;
+  color: aqua;
+  font-size: 28px;       /* default smaller size */
+  transition: 0.2s ease;
 }
 
 
@@ -73,10 +78,14 @@
 
 @media (max-width: 480px) {
   .container {
-    flex-direction: column;     /* stack logo/title and icons */
-    justify-content: center;
-    height: auto;               /* let height grow naturally */
-    padding: 10px;
+    
+    padding: 0 15px;     /* extra breathing room on tiny screens */
+    height: 65px;
+  }
+
+  .logo-title img {
+    width: 45px;
+    height: 45px;
   }
 
   .logo-title {
@@ -89,6 +98,11 @@
   }
 
   .header-icons {
+    font-size: 22px;
+    gap: 8px;
+  }
+
+  .mat-icon {
     font-size: 22px;
   }
 }

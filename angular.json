@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/bake-cake",
+            "outputPath": "dist/bake-cake/browser",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -22,7 +22,9 @@
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/_redirects"
+
             ],
             "styles": [
               "@angular/material/prebuilt-themes/deeppurple-amber.css",
@@ -90,7 +92,15 @@
             ],
             "scripts": []
           }
-        }
+        },
+        "deploy": {
+      "builder": "angular-cli-ghpages:deploy",
+    "options": {
+    "baseHref": "/Pastry_Shop/"
+    
+  }
+}
+
       }
     }
   },

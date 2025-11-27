@@ -53,11 +53,18 @@ export class PastryCardComponent implements OnInit {
 
 
   searchPastry() {
-      this.cakeService.getCakes().subscribe((data) => {
-        this.cakes = data.filter( cake => cake.name.toLowerCase().includes(this.cakeSearch) || cake.category.toLowerCase().includes(this.cakeSearch));
-        this.cakeSearch = ""
-      });
-    }
+      this.cakeService.getCakes().subscribe((data: Pastry[]) => {
+    const term = this.cakeSearch.toLowerCase();
+    this.cakes = data.filter(cake =>
+      cake.name.toLowerCase().includes(term) ||
+      cake.category.toLowerCase().includes(term)
+    );
+    this.cakeSearch = "";
+  });
+}
+
+
+
     updateSorting(selected: any) {
     const category = selected.target.value;
     if (!category) {

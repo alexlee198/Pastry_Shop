@@ -1,26 +1,28 @@
 <div class="background-img">
 
   <div class="search-container">
-    <mat-form-field>
-      <mat-label>Category</mat-label>
-      <select [(ngModel)]="selected" (change)="updateSorting($event)" matNativeControl required>
+
+    <div class=" search-group">
+
+    <div class="search-item">
+      <label>Category</label>
+      <select [(ngModel)]="selected" (change)="updateSorting($event)" required>
         <option value="">All</option>
         <option value="Cookies">Cookies</option>
         <option value="Brownie">Brownie</option>
         <option value="Cake">Cake</option>
         <option value="Pastry">Pastry</option>
       </select>
-    </mat-form-field>
+    </div>
+    <div class="search-item">
+      <label>Search A Pastry</label>
+      <input type="text" [(ngModel)]="cakeSearch" placeholder="Search A Pastry" />
+    </div>
 
-    <mat-form-field>
-      <input matInput type="text" [(ngModel)]="cakeSearch" placeholder="Search A Pastry" />
-    </mat-form-field>
-    <!-- <button style="height: 55px; text-align: center;" mat-raised-button type="button" (click)="searchPastry()">
-      Search
-    </button> -->
-    <button class= "search-btn" mat-raised-button color="accent" (click)="searchPastry()">Search</button>
-    <button class= "search-btn" mat-raised-button color="primary" (click)="showAllPastries()">Show All</button>
-  </div>
+    </div>
+      <button class= "search-btn small-btn" mat-raised-button color="accent" (click)="searchPastry()">Search</button>
+      <!-- <button class= "search-btn small-btn" mat-raised-button color="primary" (click)="showAllPastries()">Show All</button> -->
+    </div>
 
   <div class="pastry-grid">
     <mat-card *ngFor="let pastry of cakes" class="pastry-card" >
